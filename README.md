@@ -1,8 +1,54 @@
-# Getting Started with Create React App
+# Reeco Orders App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An order app built in React using Context API, Emotion CSS and Typescript.
+User can perform the following actions - 
+ - View their order details
+ - Go through the list of products in the order
+ - Approve any product
+ - Mark product as Missing or Missing-urgent
+ - Product status can be updated until the order is Approved or the shipping date has not arrived
+
+Note - To test out different cases, feel free to update the dummy data in `data/order.ts` file
+## Directory structure
+
+### Components 
+Contains all the shared components that can be reused across the app
+ - Navbar
+ - Status chip
+
+### Constants
+Contains the color library used in the app, in future can hold more such constants
+
+### Contexts
+Contains all the contexts, currently only has Order context
+ - Order Context
+
+### Data
+Contains the dummy data being used in the app, data can be modified from here to test different use cases
+
+### Images
+Contains image assets being used in the app
+
+### Models
+Contains all typescript classes, interfaces and enums that are being used in the app
+
+### Views
+Contains all the big page specific components and containers
+
+## External Libraries used
+ - emotion/styled - for styled components
+ - react-icons - for sourcing the icons used
+ - react-modal - for quickly setting up an easy way to open modals
+
+
+## Bugs / Limitations
+* Order can't be approved in the UI
+* Product can't be edited in the UI
+* Certain UI / UX yet to be polished for pixel perfect (dimensions & colors)
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
@@ -13,11 +59,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
